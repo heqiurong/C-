@@ -1,0 +1,14 @@
+
+*.pro 
+*.pro.user 
+*.pro.user.*
+*.ts 
+
+build-*/**
+client/build/**
+server/build/**
+
+.DS_Store
+.gitignore~
+.idea/
+.vscode/
