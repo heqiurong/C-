@@ -18,11 +18,15 @@ void LoginTask::run() {
 
     // 通过元对象系统在socket所在线程执行回调
     QMetaObject::invokeMethod(m_socket, [=]() {
-        PDU* respdu = mkPDU(0);
+        QString m_path = QDir::currentPath();
+        PDU* respdu = mkPDU(m_path.size());
         respdu->uiMsgType = ENUM_MSG_TYPE_LOGIN_RESPOND;
         if (ret) {
+            QString m_path = QDir::currentPath();
+            qDebug() << m_path;
             m_socket->setName(name);
             strcpy(respdu->caData, LOGIN_OK);
+            memcpy(respdu->caMsg, m_path.toStdString().c_str(), m_path.size());
         } else {
             strcpy(respdu->caData, LOGIN_FAILED);
         }

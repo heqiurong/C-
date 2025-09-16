@@ -1512,7 +1512,8 @@ release/mytcpsocket.o: ../../mytcpsocket.cpp ../../mytcpsocket.h \
 		D:/spring/c++/QT/6.5.3/mingw_64/include/QtCore/QRunnable \
 		D:/spring/c++/QT/6.5.3/mingw_64/include/QtCore/QFile \
 		D:/spring/c++/QT/6.5.3/mingw_64/include/QtCore/QFileInfo \
-		D:/spring/c++/QT/6.5.3/mingw_64/include/QtCore/QFileInfoList
+		D:/spring/c++/QT/6.5.3/mingw_64/include/QtCore/QFileInfoList \
+		D:/spring/c++/QT/6.5.3/mingw_64/include/QtCore/QMetaObject
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/mytcpsocket.o ../../mytcpsocket.cpp
 
 release/opedb.o: ../../opedb.cpp ../../opedb.h \
@@ -1924,7 +1925,8 @@ release/task.o: ../../task.cpp ../../task.h \
 		D:/spring/c++/QT/6.5.3/mingw_64/include/QtCore/qthread.h \
 		D:/spring/c++/QT/6.5.3/mingw_64/include/QtCore/qdeadlinetimer.h \
 		D:/spring/c++/QT/6.5.3/mingw_64/include/QtCore/qelapsedtimer.h \
-		D:/spring/c++/QT/6.5.3/mingw_64/include/QtCore/QMetaObject
+		D:/spring/c++/QT/6.5.3/mingw_64/include/QtCore/QMetaObject \
+		D:/spring/c++/QT/6.5.3/mingw_64/include/QtCore/QMutexLocker
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/task.o ../../task.cpp
 
 release/tcpserver.o: ../../tcpserver.cpp ../../tcpserver.h \

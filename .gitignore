@@ -5,8 +5,8 @@
 *.ts 
 
 build-*/**
-client/build/**
-server/build/**
+TcpServer/build/**
+TcpClient/build/**
 
 .DS_Store
 .gitignore~

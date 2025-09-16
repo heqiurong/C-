@@ -197,7 +197,7 @@ void TcpClient::handleLoginRespond(PDU *pdu)
 
     if (strcmp(pdu->caData, LOGIN_OK) == 0) {
         // 登录成功：创建用户目录（用QDir确保路径合法性）
-        mFilePath = QDir::currentPath() + "/" + userName;
+        mFilePath = "./" + userName;
         QDir userDir(mFilePath);
         if (!userDir.exists()) {
             if (!userDir.mkpath(".")) {  // 创建多级目录（支持嵌套路径）
